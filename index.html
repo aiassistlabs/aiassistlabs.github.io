@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Assist Labs</title>
+<meta name="description" content="AI Assist Labs builds applications for Android, iOS, Windows and Linux, and provides AI
+consulting including custom agentic integrations. A Florida company, operating as AI Assist LLC.">
+<!--
+  Google Search Console verification.
+  When verifying aiassistlabs.com for Google Play's "Verify your organization's website" task, paste the meta tag
+  Search Console gives you on the line below, or upload the HTML file it offers to the site root. Both work on
+  GitHub Pages. Leave this comment in place so the next person knows where the tag belongs.
+-->
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --border: #e6e1d8;
+    --text: #1c1a17;
+    --muted: #5d574d;
+    --accent: #8a5200;
+    --accent-plate: #fff3e0;
+    --screen: #14161c;
+    --screen-text: #ffb85c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121211;
+      --surface: #1b1a18;
+      --border: #2f2d29;
+      --text: #f2efe9;
+      --muted: #a9a296;
+      --accent: #ffb85c;
+      --accent-plate: #2a1f0d;
+      --screen: #0a0b0e;
+      --screen-text: #ffb85c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121211;
+    --surface: #1b1a18;
+    --border: #2f2d29;
+    --text: #f2efe9;
+    --muted: #a9a296;
+    --accent: #ffb85c;
+    --accent-plate: #2a1f0d;
+    --screen: #0a0b0e;
+    --screen-text: #ffb85c;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+  header { margin-bottom: 3rem; }
+  .mark {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--screen); color: var(--screen-text);
+    font-weight: 700; letter-spacing: .02em;
+    padding: .55rem .85rem; border-radius: .5rem; font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 .75rem; letter-spacing: -.02em; }
+  .lede { font-size: 1.15rem; color: var(--muted); margin: 0; max-width: 34rem; }
+
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--accent); margin: 3rem 0 1rem;
+  }
+  h3 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  p { margin: 0 0 1rem; }
+
+  /* auto-fit rather than a fixed column count, so adding or removing a capability card reflows cleanly instead of
+     leaving a hole in the last row. */
+  .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: .7rem; padding: 1.25rem 1.35rem;
+  }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+  .work { background: var(--surface); border: 1px solid var(--border); border-radius: .7rem; padding: 1.35rem; }
+  .work .status {
+    display: inline-block; background: var(--accent-plate); color: var(--accent);
+    font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+    padding: .2rem .5rem; border-radius: .3rem; margin-bottom: .6rem;
+  }
+  .work p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+
+  .contact a { font-size: 1.1rem; font-weight: 600; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: .88rem;
+  }
+  footer p { margin: 0 0 .4rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">AI Assist Labs</div>
+    <h1>Software that does one thing, and does it properly.</h1>
+    <p class="lede">
+      We build applications for Android, iOS, Windows, Linux and embedded devices, and help teams work out where AI
+      actually helps and where it does not.
+    </p>
+  </header>
+
+  <h2>What we do</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Mobile and desktop applications</h3>
+      <p>
+        Native applications for Android, iOS, Windows and Linux, tested on real hardware and shipped through
+        whichever channel each platform uses.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Embedded systems</h3>
+      <p>
+        Firmware and device software, where the constraints are real and the hardware does not forgive guesswork.
+      </p>
+    </div>
+    <div class="card">
+      <h3>AI consulting</h3>
+      <p>
+        Scoping, building and evaluating AI features, including custom agentic integrations wired into the systems
+        a team already runs on.
+      </p>
+    </div>
+  </div>
+
+  <h2>Current work</h2>
+  <div class="work">
+    <span class="status">In development</span>
+    <h3>Ambient Clock Screensaver</h3>
+    <p>
+      An Android screensaver that shows the time full-screen while your phone is docked or charging. It dims to
+      protect an OLED panel and moves the clock periodically so no pixel holds the same bright content all night.
+      No permissions, no network access, no accounts.
+    </p>
+  </div>
+
+  <h2>Contact</h2>
+  <p class="contact"><a href="mailto:support@aiassistlabs.com">support@aiassistlabs.com</a></p>
+
+  <footer>
+    <p>AI Assist Labs is a trading name of <strong>AI Assist LLC</strong>, a Florida limited liability company.</p>
+    <p>709 Meredith St, Fern Park, FL 32730, United States</p>
+  </footer>
+
+</div>
+</body>
+</html>
