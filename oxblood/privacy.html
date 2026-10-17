@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Oxblood Backgammon</title>
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #1c1b19;
+    --muted: #5b5951;
+    --rule: #e2ded4;
+    --accent: #8a5a2b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121211;
+      --surface: #1b1b1a;
+      --text: #eceae4;
+      --muted: #a8a49a;
+      --rule: #32312e;
+      --accent: #e0a86a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 {
+    margin: 0 0 0.35rem;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    margin: 2.25rem 0 0.6rem;
+    font-size: 1.0625rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  p { margin: 0 0 1rem; }
+  .meta {
+    margin: 0 0 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  .settings {
+    margin: 0 0 1rem;
+    padding: 1rem 1rem 1rem 2.1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+  }
+  .settings li { margin: 0.2rem 0; }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy for Oxblood Backgammon</h1>
+  <p class="meta">Effective date: 16 October 2026. Applies to the Android app <code>com.aiassistlabs.oxblood</code>.</p>
+
+  <h2>The short version</h2>
+  <p>Oxblood Backgammon is played online. The app sends the game server what an online game needs: a player id,
+    your display name, your moves and results, and your rating. AI ASSIST LLC runs the server and Cloudflare hosts it. Nothing is sold, and there
+    are no ads, no analytics and no sharing with third parties. You can delete your online profile at any time.</p>
+
+  <h2>What stays on your phone</h2>
+  <p>The app keeps these values in its private storage on your device:</p>
+  <ul class="settings">
+    <li>Your settings: sound, vibration and move hints</li>
+    <li>Your online win tally</li>
+    <li>Your player id and install token, the players you blocked, and the room of an unfinished online game so you can return to it</li>
+  </ul>
+  <p>Uninstalling the app or clearing its data deletes them from the phone. The app excludes them from Android's
+    cloud backup and from device-to-device transfer, so they are not copied to Google Drive or to a new phone. It
+    also turns off the usage metrics that Android's built-in web view would otherwise report.</p>
+
+  <h2>Online play: what is sent and stored</h2>
+  <p>The app uses the internet only to reach the game server, and its only Android permission, internet access,
+    exists for it. The first time you open Play online, you accept the online terms and choose a
+    display name. The server then creates:</p>
+  <ul class="settings">
+    <li>A random player id. Your name is always shown with a 4-character tag taken from it, such as <code>3F9A</code> in <code>Mara#3F9A</code></li>
+    <li>A secret install token that proves later requests come from this install. The server keeps only a hash of it (SHA-256), never the token itself</li>
+  </ul>
+  <p>While you play online, the server stores:</p>
+  <ul class="settings">
+    <li>Your display name and when you last changed it</li>
+    <li>Your games: each move, the dice the server rolled, the doubling cube decisions, and the result</li>
+    <li>Your rating, the number of rated games you have played, and when you last played one</li>
+    <li>When you accepted the online terms, when the server last saw you, and whether a moderator has hidden your profile</li>
+    <li>Reports you file about another player's name: who you reported and the name they used at the time. A report someone files about you stores the same about you</li>
+    <li>To limit abuse, hourly counts of your reports, private games and opponent searches, and of the profiles created from your connection. The last is counted under a one-way hash of your IP address and the hour, never the address itself</li>
+  </ul>
+  <p>Each time you search for an opponent, the app also sends the ids of the players you blocked, so the server
+    does not pair you with them. The server uses that list only for that search.</p>
+
+  <h2>Who receives it</h2>
+  <p>AI ASSIST LLC runs the game server and is the only party that uses this data. The server runs on Cloudflare
+    Workers: Cloudflare, Inc. hosts it and, as our service provider, processes connection data such as your IP
+    address to carry traffic to and from the server. The game server's own code does not record or store IP
+    addresses; it keeps only the one-way hash described above. We do not sell your data, show ads, run analytics, or share your data with any other third
+    party.</p>
+
+  <h2>What other players see</h2>
+  <p>Your opponent sees your name with its tag, your moves and the result, and their app receives your player id so
+    they can report or block you. At the end of a rated game, both players see both ratings. Once you qualify, your
+    name, tag, rating and number of rated games can appear on the leaderboard, which every online player can open.
+    Their app also receives your player id with the leaderboard, so they can report or block you from it. Do not use your real name, or anything else that identifies you, as your display name.</p>
+
+  <h2>How long it is kept</h2>
+  <ul class="settings">
+    <li>A game, including its moves and dice: deleted 10 minutes after it ends. A private game that never starts is deleted 10 minutes after it was created</li>
+    <li>The id of each rated game whose ratings were applied, kept only so a retry never counts a game twice. It holds no player data: deleted after 1 day</li>
+    <li>The hourly counts used to limit abuse: deleted within a day after their hour ends</li>
+    <li>Reports: deleted after 90 days</li>
+    <li>Your online profile (player id, token hash, name, rating and game count): kept until you delete it, or deleted automatically after 12 months in which the server has not seen you</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>All online traffic between the app and the server is encrypted in transit with HTTPS and secure WebSockets
+    (WSS). The install token is sent only inside these encrypted messages.</p>
+
+  <h2>Names and moderation</h2>
+  <p>The online terms describe which names and behaviour are not allowed, and the server refuses some names
+    automatically. Every player can report a name. We review reports and may rename a player to
+    <code>Player</code> or hide a player from matchmaking and the leaderboard.</p>
+
+  <h2 id="delete">Delete your online profile</h2>
+  <p>In the app, open Play online and choose Delete online profile. The server deletes your player id, token hash,
+    name, rating, and the reports you filed or received, at once.</p>
+  <p>You can also ask by email. Write to <a href="mailto:support@aiassistlabs.com">support@aiassistlabs.com</a>
+    with your display name and the 4-character tag shown after it in the app, for example <code>3F9A</code> in
+    <code>Mara#3F9A</code>. We delete the profile and reply to confirm.</p>
+  <p>Either way, two records keep your player id for a limited time after the deletion. A game still in progress, or
+    one that ended in the last 10 minutes, keeps your player id and name until that game is deleted. The hourly
+    counts of your reports, private games and opponent searches used to limit abuse are stored under your player id
+    and keep it until they are deleted, within a day after their hour ends. Both are described under How long it is
+    kept.</p>
+  <p>Uninstalling the app or clearing its data does not delete your online profile from the server. Delete it first
+    by one of the routes above; otherwise it is deleted automatically after 12 months without being seen.</p>
+
+  <h2>What the app does not do</h2>
+  <p>There are no accounts, passwords or sign-in: online play uses the anonymous player id above. There is no
+    analytics, no crash reporting, no advertising, no in-app purchases and no tracking of any kind. There is no
+    chat: the only text one player can show another is the display name.</p>
+
+  <h2>Children</h2>
+  <p>The app is meant for people aged 13 and over, and the online terms require it. Online play has no chat, and we
+    do not knowingly collect data from children under 13. If you believe a child under 13 has an
+    online profile, email its tag to <a href="mailto:support@aiassistlabs.com">support@aiassistlabs.com</a> and we
+    will delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If a future version of the app ever handles data differently, this page will be updated before that version
+    is published, and the effective date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy go to AI ASSIST LLC at
+    <a href="mailto:support@aiassistlabs.com">support@aiassistlabs.com</a>.</p>
+
+  <footer>
+    <p><a href="/">AI Assist Labs</a> - a Florida company, operating as AI ASSIST LLC.</p>
+  </footer>
+</main>
+</body>
+</html>
